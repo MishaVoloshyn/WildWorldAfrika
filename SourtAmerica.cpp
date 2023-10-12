@@ -2,15 +2,15 @@
 #include <iostream>
 using namespace std;
 
-void NorthAmerika::Print() {
+void SouthAmerika::Print() {
 	cout << "Continent: " << name << endl;
 	cout << "Square: " << square << endl;
 	cout << "temperature: " << temperature << endl;
 }
-char* NorthAmerika::GetContinent() {
+char* SouthAmerika::GetContinent() {
 	return name;
 }
-NorthAmerika::~NorthAmerika() {
+SouthAmerika::~SouthAmerika() {
 	delete herbivore;
 	delete carnivore;
 }

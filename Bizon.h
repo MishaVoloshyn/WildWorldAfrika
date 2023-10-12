@@ -1,16 +1,16 @@
 #pragma once
-#include "Herbivore.h"
+#include "Bizon.h"
 #include "Continent.h"
-#include "AnimalWorld.h"
+#include "World.h"
 
-class Wildbeest : public Herbivore
+class Bizon : public Herbivore
 {
 private:
 	Continent* continent;
 public:
-	Wildbeest();
-	Wildbeest(AnimalWorld* animal, Continent* cont, char* n, double w, bool life);
+	Bizon();
+	Bizon(World* animal, Continent* cont, char* n, double w, bool life);
 	void Print();
 	char* GetContinent();
-	~Wildbeest();
+	~Bizon();
 };
